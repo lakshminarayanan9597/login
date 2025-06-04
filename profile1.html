@@ -1,43 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Sign up Form</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="profile1.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="center">
-          <h1>Sign Up</h1>
-          <form action="" method="POST">
-              <div class="txt_field">
-                  <input type="text" name="text" required>
-                  <span></span>
-                  <label>Username</label>
-              </div>
-              <div class="txt_field">
-                    <input type="text" name="mobile" required pattern="[0-9]{10}" title="Please enter a valid 10-digit mobile number">  
-                    <span></span>
-                    <label>Mobile Number</label>
-              </div>
-              <div class="txt_field">
-                  <input type="password" name="password" required>
-                  <span></span>
-                  <label>Password</label>
-              </div>
-              
-              <div class="checkbox">
-                <input type="checkbox" name="checkbox" id="checkbox" required>
-                <a  target="_top" href="https://www.termsfeed.com/live/57af976e-029e-4e8b-b76e-47f2b183d3e5">I agree to the Terms of Service </a>
-                <span class="checkmark"></span>
-                </div>
-              <input name="submit" type="Submit" value="Register" class="btn">
-              <div class="signup">
-                  Already have an account ? <a href="#">Login</a>
-              </div>
-          </form>
-      </div>
-    </div>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign_up.css">
+    <title>LOGIN FORM</title>
+</head>
+    <form action="/login" method="post">
+        <h2>Login</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        <input type="checkbox"> <label for="remember" class="check">Remember Me</label>
+        <button type="submit">Login</button>
+        <p>Don't have an account? <a target="_blank" href="https://hari2006.neocities.org/register/reg">Sign Up</a></p>
+        <p>Forgot your password? <a target="_top" href="https://hari2006.neocities.org/forgot/forgot">Reset Password</a></p>
+    </form>
+</body>
 </html>
